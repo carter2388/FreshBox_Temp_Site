@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Freshbox — Fresh laundry.</title>
+    <meta name="description"
+        content="Freshbox picks up, washes & folds, and delivers laundry next-day. Schedule a pickup in minutes.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/blue-pale-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <a href="#top" aria-label="Go to top">
+                    <img src="images/icon-black.png" alt="Freshbox logo" class="logo">
+                    FreshBoxPro<span class="dot">.</span>
+                </a>
+            </div>
+
+            <div class="header-right">
+                <nav class="nav" aria-label="Primary">
+                    <a href="#how">How we work</a>
+                    <a href="#pricing">Pricing</a>
+                </nav>
+                <button id="ctaTop" class="btn-primary cta-hide-mobile" type="button">Schedule Pickup</button>
+                <div>
+                    <!-- Desktop/Laptop -->
+                    <a class="btn-wa wa-desktop"
+                        href="https://web.whatsapp.com/send?phone=12026029206&text=Hi%20Freshbox!%20I%27d%20like%20to%20schedule%20a%20pickup."
+                        target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp Web">
+                        <img src="images/whatsapp.png" alt="WhatsApp" class="wa-icon">
+                        <span class="walabel">Chat with us</span>
+                    </a>
+
+                    <!-- Mobile/Touch -->
+                    <a class="btn-wa wa-mobile"
+                        href="https://wa.me/12026029206?text=Hi%20Freshbox!%20I%27d%20like%20to%20schedule%20a%20pickup."
+                        target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+                        <img src="images/whatsapp.png" alt="WhatsApp" class="wa-icon">
+                    </a>
+                </div>
+
+            </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="top" aria-label="Freshbox hero">
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="container hero-content">
+            <h1>Fresh Laundry. <span class="accent">On Schedule.</span> No Hassle.</h1>
+            <p>We pick up, wash, fold, and deliver—so you can do anything else.</p>
+            <div class="hero-actions">
+                <button id="ctaHero" class="btn-primary" type="button">Schedule Pickup</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="how">
+        <div class="container">
+            <h2>How we works</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Pickup at your doorstep</h3>
+                    <p>Schedule a pickup and we’ll collect your laundry and dry cleaning right from your doorstep.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Cleaned with care</h3>
+                    <p>We wash, dry, or dry clean your items according to your selected preferences.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Fresh delivery</h3>
+                    <p>Your clothes return fresh, folded, or hung—ready to wear.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <p class="muted">Start with a flat rate per standard laundry bag. Specialty items priced separately.</p>
+            <div class="cards">
+                <div class="price-card">
+                    <div class="label">Wash & Fold</div>
+                    <div class="price">$1.85</div>
+                    <p>Clothes sorted, washed, dried, and folded. Billed per pound (min 15lb).</p>
+                </div>
+                <div class="price-card">
+                    <div class="label">Dry cleaning</div>
+                    <div class="price">$3.50</div>
+                    <p>Per item, billed separately (e.g., shirts $3.50, pants/skirts $5.99, dresses $7.99).</p>
+                </div>
+                <div class="price-card">
+                    <div class="label">Special care items</div>
+                    <div class="price">$10</div>
+                    <p>Comforters, linens, and delicates starting at $10.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form -->
+    <section class="form-section" id="schedule">
+        <div class="container" id="formContainer">
+            <h2>Schedule your pickup</h2>
+            <p class="muted">Fill in your details and preferred pickup time. We’ll confirm by text.</p>
+
+            <form class="form-grid" id="pickupForm" action="https://formspree.io/f/mvgwolrn" method="POST" novalidate>
+                <!-- Row 1 -->
+                <label>
+                    <span>First name</span>
+                    <input name="first_name" type="text" required>
+                </label>
+                <label>
+                    <span>Last name</span>
+                    <input name="last_name" type="text" required>
+                </label>
+
+                <!-- Row 2 -->
+                <label>
+                    <span>Email</span>
+                    <input name="email" type="email" required>
+                </label>
+                <label>
+                    <span>Phone</span>
+                    <input name="phone" type="tel" id="phone" placeholder="(555) 123-4567" required>
+                </label>
+
+                <!-- Row 3 -->
+                <label>
+                    <span>Street address</span>
+                    <input name="street_address" type="text" required>
+                </label>
+                <label>
+                    <span>Unit / Apt (optional)</span>
+                    <input name="unit" type="text">
+                </label>
+
+                <!-- Row 4 -->
+                <label>
+                    <span>City</span>
+                    <input name="city" id="city" type="text" autocomplete="address-level2" required>
+                </label>
+                <label>
+                    <span>State</span>
+                    <select name="state" id="state" required>
+                        <option value="" disabled selected>Choose</option>
+                        <option value="DC">D.C.</option>
+                        <option value="MD">MD</option>
+                        <option value="VA">VA</option>
+                    </select>
+                </label>
+
+                <!-- Row 5 -->
+
+                <label>
+                    <span>ZIP code</span>
+                    <input name="zipcode" id="zipcode" type="text" inputmode="numeric" autocomplete="postal-code"
+                        pattern="[0-9]{5}" maxlength="5" placeholder="5-digit ZIP" required>
+                </label>
+
+                <!-- Row 6: City + ZIP -->
+                <label>
+                    <span>Pickup time (≥ 24h)</span>
+                    <input id="pickupTime" name="pickup_time" type="datetime-local" step="900" required>
+                </label>
+
+                <!-- Honeypot -->
+                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+
+                <button type="submit" class="btn-primary">Request Pickup</button>
+                <p id="formMsg" class="tiny muted" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="successTitle"
+        aria-modal="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content" role="document" tabindex="-1">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <h3 id="successTitle">Pickup Request Received</h3>
+            <p>Thanks! We’ll inform you when we begin service in your area.</p>
+            <button class="btn-primary modal-ok" type="button">Okay</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Freshbox — All rights reserved.</p>
+            <div class="footer-right">
+                <nav class="nav" id="footnav" aria-label="Footer">
+                    <a href="#how">About US</a>
+                    <a href="#pricing">FAQ</a>
+                    <a href="#schedule">Privacy & Terms</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
